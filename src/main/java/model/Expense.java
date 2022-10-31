@@ -64,9 +64,8 @@ public class Expense {
     @Override
     public String toString() {
         return "Expense{" +
-                "id=" + id +
-                ", value=" + value +
-                ", usedProducts='" + usedProducts + '\'' +
-                '}';
+                "id= " + id +
+                ", value= R$" + value +
+                ", usedProducts= " + usedProducts + '}';
     }
 }
