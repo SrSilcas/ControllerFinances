@@ -5,14 +5,14 @@ public class Payment {
     private int month;
     private int year;
     private double value;
-    private boolean status;
+    private boolean paid;
     //constructors
-    public Payment(int id, int month, int year, double value, boolean status) {
+    public Payment(int id, int month, int year, double value, boolean paid) {
         this.id = id;
         this.month = month;
         this.year = year;
         this.value = value;
-        this.status = status;
+        this.paid = paid;
     }
     public Payment() {
     }
@@ -29,11 +29,11 @@ public class Payment {
     public void setValue(double value) {
         this.value = value;
     }
-    public boolean isStatus() {
-        return status;
+    public boolean isPaid() {
+        return paid;
     }
-    public void setStatus(boolean status) {
-        this.status = status;
+    public void setPaid(boolean paid) {
+        this.paid = paid;
     }
     public int getMonth() {
         return month;
@@ -49,7 +49,7 @@ public class Payment {
     }
     @Override
     public String toString() {
-        if (this.status) {
+        if (this.paid) {
             return "Payment{" +
                     "id= " + id +
                     ", value= R$" + value +
